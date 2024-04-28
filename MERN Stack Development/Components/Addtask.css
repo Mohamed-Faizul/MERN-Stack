@@ -1,0 +1,47 @@
+.addtask{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+}
+
+.addtask input[type=text]{
+    width: 50%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(22,24,148);
+    font-size: 20px;
+    padding: 20px;
+    color: rgb(22,75,241);
+}
+
+.addtask input[type=text]::placeholder{
+    color: rgba(66,66,243,0.4);
+}
+
+.addtask button{
+    width: 10%;
+    padding: 10px 5px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+    background: linear-gradient(130deg,red,gold,blue);
+    background-size: 200% 200%;
+    animation: fullstack 2s linear .4s infinite;
+}
+
+@keyframes fullstack{
+    0%{
+        background-position: 10% 0%;
+    } 50% {
+        background-position: 91% 100%;
+    } 100% {
+        background-position: 10% 0%;
+    }
+}

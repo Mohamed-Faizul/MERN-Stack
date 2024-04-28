@@ -1,0 +1,61 @@
+.tasklist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 30px;
+    border-top: 2px solid rgba(0,0,0,0.1);
+}
+
+.tasklist ul{
+    list-style: none;
+    width: 70%;
+}
+
+.tasklist ul li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 14px;
+    font-weight: bolder;
+    transition: .4s;
+    user-select: none;
+}
+
+.tasklist ul li .isComplete{
+    visibility: visible;
+    color: rgba(24,233,146);
+    margin-right: 10px;
+
+}
+
+.tasklist ul li .checkicon{
+    visibility: hidden;
+    margin-right: 10px;
+}
+
+.tasklist ul li p.taskComplete{
+    text-decoration: line-through;
+}
+
+.tasklist ul li .edit , .close{
+    margin-left: 10px;
+}
+.tasklist ul li .edit:hover{
+    background-color: rgba(7,94,233);
+    color: #fff;
+}
+.tasklist ul li .close:hover{
+    background-color: rgba(253,92,92);
+    color: #fff;
+}
+
+.tasklist ul li:nth-child(odd){
+    background-color: #f9f9f9;
+}
+
+.tasklist ul li:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
